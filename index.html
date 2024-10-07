@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="OIP-removebg-preview (1).png">
+    <link rel="stylesheet" media="(max-width:500px)" href="mobile.css">
+    <title>Js log in</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>.. Enter your email and write your message</h1>
+        <form id="myForm" onsubmit="sendemail()">
+            <div id="Msg"></div>
+            <div class="error"></div>
+            <div id="Msg2"></div>
+            <div class="right"></div>
+            
+            <input id="email" type="email" placeholder="Enter your email">
+            <textarea name="message" id="text" cols="30" rows="10"></textarea>
+            <button id="myBtn" type="submit" value="Submit">Submit</button>
+
+        </form>
+
+
+        <ul id="user">
+            <!--<li id="item"></li>-->
+        </ul>
+
+    </div>
+
+
+
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "CALss3Vj6jLBvCiyp",
+  });
+})();
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+*h1 import{
+    font-family: 'Rochester';
+    }
+body::before {
+    display: block;
+    content: '';
+    width: 500px;
+    height: 500px;
+    background-color: steelblue;
+    border-radius: 20%;
+    position: absolute;
+    top: -220px;
+    right: -150px;
+    transform: rotate(50deg);
+    z-index: 3;
+}
+body::after {
+    display: inline;
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 425px;
+    left: 100px;
+    border-radius: 20%;
+    background-color: steelblue;
+    transform: rotate(45deg);
+    /* border: solid 2px rgba(0, 0, 0, 0.745); */
+}
+
+.container{
+    width: 500px;
+    height: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid  steelblue;
+    border-radius: 50px;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+}
+
+#myForm{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items:center;
+    justify-content:center;
+}
+ #email{
+    width:250px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+ #email::placeholder{
+    text-align: center;
+}
+
+#text::placeholder{
+    text-align: center;
+}
+#text{
+    border: 1px solid black;
+    font-size: 20px;
+
+}
+#myBtn{
+    width: 100px;
+    height: 40px;
+    color:black;
+    background-color:steelblue;
+    border-radius: 10px;
+}
+h1{
+    color: steelblue;
+    font-family:'Rochester';
+    font-size: 50px;
+}
+.error{
+    background-color: red;
+    width: 200px;
+    border-radius:5px;
+}
+.right{
+    background-color: rgb(71, 221, 71);
+    width: 300px;
+    border-radius:5px;
+}
+#item{
+    background-color: steelblue;
+    height: 35px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    list-style: none;
+}
